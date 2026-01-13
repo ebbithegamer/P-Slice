@@ -59,6 +59,7 @@ class TitleState extends MusicBeatState
 		super.create();
 		CacheSystem.clearUnusedMemory();
 		startIntro();
+		Achievements.unlock('first_boot');
 	}
 
 	var logoBl:FlxSprite;
