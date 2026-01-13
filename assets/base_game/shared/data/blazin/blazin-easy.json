@@ -958,6 +958,7 @@
 			}
 		],
 		"gfVersion": "nene",
+		"gameOverChar": "pico-blazin-dead",
 		"format": "psych_v1_convert",
 		"bpm": 180,
 		"needsVoices": false,

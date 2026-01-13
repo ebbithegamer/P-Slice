@@ -2,7 +2,7 @@
 	"animations": [
 		{
 			"loop": false,
-			"offsets": [100, 600],
+			"offsets": [100, 100],
 			"anim": "firstDeath",
 			"fps": 24,
 			"name": "Pico Fighting ALL ANIMS",
@@ -10,7 +10,7 @@
 		},
 		{
 			"loop": true,
-			"offsets": [100, 600],
+			"offsets": [100, 100],
 			"anim": "deathLoop",
 			"fps": 24,
 			"name": "Pico Fighting ALL ANIMS",
@@ -18,7 +18,7 @@
 		},
 		{
 			"loop": false,
-			"offsets": [100, 600],
+			"offsets": [100, 100],
 			"anim": "deathConfirm",
 			"fps": 24,
 			"name": "Pico Fighting ALL ANIMS",
@@ -32,7 +32,7 @@
 	"healthicon": "pico",
 	"flip_x": true,
 	"healthbar_colors": [183, 216, 85],
-	"camera_position": [0, -500],
+	"camera_position": [0, 0],
 	"sing_duration": 999,
 	"scale": 1.75,
 	"_editor_isPlayer": true
