@@ -134,6 +134,8 @@ class CharSelectSubState extends MusicBeatSubState
 	{
 		super.create();
 
+		Achievements.unlock('character_select');
+
 		cutoutSize = MobileScaleMode.gameCutoutSize.x / 2;
 
 		bopInfo = FramesJSFLParser.parse("images/charSelect/iconBopInfo/iconBopInfo.txt");

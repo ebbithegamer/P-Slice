@@ -32,8 +32,10 @@ enum abstract AchievementOp(String)
 class Achievements {
 	public static function init()
 	{
+		createAchievement('first_boot',				{name: "I Said Funkin'", description: "Play the game for the first time.", hidden: true});
 		createAchievement('friday_night_play',		{name: "Just like the game!", description: "Play on a Friday... Night.", hidden: true});
 		#if BASE_GAME_FILES
+		createAchievement('tutorial_nomiss',		{name: "That's How You Do It!", description: "Beat Tutorial on Hard with no Misses."});
 		createAchievement('week1_nomiss',			{name: "More Like Daddy Queerest", description: "Beat Week 1 on Hard with no Misses."});
 		createAchievement('week2_nomiss',			{name: "IT IS THE SPOOKY MONTH", description: "Beat Week 2 on Hard with no Misses."});
 		createAchievement('week3_nomiss',			{name: "Pico Funny", description: "Beat Week 3 on Hard with no Misses."});
@@ -51,6 +53,7 @@ class Achievements {
 		createAchievement('hype',					{name: "Hyperactive", description: "Finish a Song without going back to Idle."});
 		createAchievement('two_keys',				{name: "Just the Two of Us", description: "Finish a Song pressing only two keys."});
 		createAchievement('toastie',				{name: "Toaster Gamer", description: "Have you tried to run the game on a toaster?"});
+		createAchievement('character_select',		{name: "Stay Funky", description: "Enter the Character Select menu and unlock your first character."});
 		#if (TITLE_SCREEN_EASTER_EGG || PSYCH_WATERMARKS)
 		createAchievement('pessy_easter_egg',		{name: "Psych-chan!", description: "Teehee, you found me~!", hidden: true});
 		#end
