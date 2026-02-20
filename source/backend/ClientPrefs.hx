@@ -160,10 +160,10 @@ class ClientPrefs {
 		'ui_down'		=> [DPAD_DOWN, LEFT_STICK_DIGITAL_DOWN],
 		'ui_right'		=> [DPAD_RIGHT, LEFT_STICK_DIGITAL_RIGHT],
 		
-		'favorite'		=> [],
-		'bar_left'		=> [],
-		'bar_right'		=> [],
-		'char_select'		=> [],
+		'favorite'		=> [Y],
+		'bar_left'		=> [LEFT_SHOULDER],
+		'bar_right'		=> [RIGHT_SHOULDER],
+		'char_select'		=> [X],
 
 		'accept'		=> [A, START],
 		'back'			=> [B],
