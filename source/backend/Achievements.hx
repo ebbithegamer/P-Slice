@@ -57,8 +57,8 @@ class Achievements {
 		createAchievement('two_keys',				{name: "Just the Two of Us", description: "Finish a Song pressing only two keys."});
 		createAchievement('toastie',				{name: "Toaster Gamer", description: "Have you tried to run the game on a toaster?"});
 		createAchievement('character_select',		{name: "Stay Funky", description: "Enter the Character Select menu and unlock your first character."});
-		createAchievement('harder',					{name: "Harder Than Hard", description: "Beat any Erect remix in Freeplay on Nightmare."});
-		createAchievement('rap_god',				{name: "The Rap God", description: "Earn a Gold Perfect rating on any song on Nightmare difficulty."});
+		createAchievement('harder',					{name: "Harder Than Hard", description: "Beat any Erect remix in Freeplay on Erect or Nightmare."});
+		createAchievement('rap_god',				{name: "The Rap God", description: "Earn a Gold Perfect rating on any song on Nightmare."});
 		#if (TITLE_SCREEN_EASTER_EGG || PSYCH_WATERMARKS)
 		createAchievement('pessy_easter_egg',		{name: "Psych-chan!", description: "Teehee, you found me~!", hidden: true});
 		#end
