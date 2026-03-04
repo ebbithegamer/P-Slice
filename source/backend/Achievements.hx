@@ -46,14 +46,19 @@ class Achievements {
 		createAchievement('weekend1_nomiss',		{name: "Yo, Really Think So?", description: "Beat Weekend 1 on Hard with no Misses."});
 		createAchievement('roadkill_enthusiast',	{name: "Roadkill Enthusiast", description: "Watch the Henchmen die 50 times.", maxScore: 50, maxDecimals: 0});
 		createAchievement('debugger',				{name: "Debugger", description: "Beat the \"Test\" Stage from the Chart Editor.", hidden: true});
+		createAchievement('pico_mix',				{name: "A Challenger Approaches", description: "Beat any Pico remix in Freeplay on Hard."});
+		createAchievement('de-stressing',			{name: "De-Stressing", description: "Beat Stress (Pico Mix) in Freeplay on Hard."});
 		#end
 		createAchievement('ur_bad',					{name: "L", description: "Complete a Song with a rating lower than 20%."});
+		createAchievement('nice',					{name: "Nice", description: "Earn a rating of EXACTLY 69% (good luck).", hidden: true});
 		createAchievement('ur_good',				{name: "You Should Drink More Water", description: "Complete a Song with a rating of 100%."});
 		createAchievement('oversinging', 			{name: "Oversinging Much...?", description: "Sing for 10 seconds without going back to Idle."});
 		createAchievement('hype',					{name: "Hyperactive", description: "Finish a Song without going back to Idle."});
 		createAchievement('two_keys',				{name: "Just the Two of Us", description: "Finish a Song pressing only two keys."});
 		createAchievement('toastie',				{name: "Toaster Gamer", description: "Have you tried to run the game on a toaster?"});
 		createAchievement('character_select',		{name: "Stay Funky", description: "Enter the Character Select menu and unlock your first character."});
+		createAchievement('harder',					{name: "Harder Than Hard", description: "Beat any Erect remix in Freeplay on Nightmare."});
+		createAchievement('rap_god',				{name: "The Rap God", description: "Earn a Gold Perfect rating on any song on Nightmare difficulty."});
 		#if (TITLE_SCREEN_EASTER_EGG || PSYCH_WATERMARKS)
 		createAchievement('pessy_easter_egg',		{name: "Psych-chan!", description: "Teehee, you found me~!", hidden: true});
 		#end

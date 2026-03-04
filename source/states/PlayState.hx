@@ -4321,8 +4321,17 @@ private function checkForAchievement(achievesToCheck:Array<String> = null)
 				case 'ur_bad':
 					unlock = (ratingPercent < 0.2 && !practiceMode);
 
+				case 'nice':
+					unlock = (ratingPercent == 0.7 && !usedPractice);
+
 				case 'ur_good':
 					unlock = (ratingPercent >= 1 && !usedPractice);
+
+				case 'harder':
+					unlock = (Difficulty.getString().toUpperCase() == 'NIGHTMARE' && !usedPractice || Difficulty.getString().toUpperCase() == 'ERECT' && !usedPractice);
+				
+				case 'rap_god':
+					unlock = (Difficulty.getString().toUpperCase() == 'NIGHTMARE' && ratingPercent >= 1 && !usedPractice);
 
 				case 'oversinging':
 					unlock = (boyfriend.holdTimer >= 10 && !usedPractice);
@@ -4338,6 +4347,12 @@ private function checkForAchievement(achievesToCheck:Array<String> = null)
 
 				case 'debugger':
 					unlock = (songName == 'test' && !usedPractice);
+				
+				case 'pico_mix':
+					unlock = (songName.contains('(Pico Mix)') && Difficulty.getString().toUpperCase() == 'HARD' && !usedPractice);
+				
+				case 'de-stressing':
+					unlock = (songName == 'Stress (Pico Mix)' && Difficulty.getString().toUpperCase() == 'HARD' && !usedPractice);
 			}
 		}
 		else // any FC achievements, name should be "weekFileName_nomiss", e.g: "week3_nomiss";
