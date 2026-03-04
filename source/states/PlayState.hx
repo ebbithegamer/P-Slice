@@ -4349,10 +4349,10 @@ private function checkForAchievement(achievesToCheck:Array<String> = null)
 					unlock = (songName == 'test' && !usedPractice);
 				
 				case 'pico_mix':
-					unlock = (songName.contains('(Pico Mix)') && Difficulty.getString().toUpperCase() == 'HARD' && !usedPractice);
+					unlock = (songName.contains('(pico-mix)') && Difficulty.getString().toUpperCase() == 'HARD' && !usedPractice);
 				
 				case 'de-stressing':
-					unlock = (songName == 'Stress (Pico Mix)' && Difficulty.getString().toUpperCase() == 'HARD' && !usedPractice);
+					unlock = (songName == 'stress-(pico-mix)' && Difficulty.getString().toUpperCase() == 'HARD' && !usedPractice);
 			}
 		}
 		else // any FC achievements, name should be "weekFileName_nomiss", e.g: "week3_nomiss";
